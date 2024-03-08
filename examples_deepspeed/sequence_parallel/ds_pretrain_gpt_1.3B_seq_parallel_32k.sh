@@ -282,8 +282,8 @@ megatron_options=" \
     --log-timers-to-tensorboard \
     --log-batch-size-to-tensorboard \
     --log-validation-ppl-to-tensorboard \
-    --tensorboard-dir ${tensorboard_path}" \
-    --skip_train
+    --tensorboard-dir ${tensorboard_path} \
+    --skip_train"
 
 if [ "${activation_checkpoint}" = "true" ]; then
 megatron_options="${megatron_options} \
